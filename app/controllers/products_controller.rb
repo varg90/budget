@@ -28,7 +28,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        format.html { redirect_to @product, notice: 'Product was successfully created.' }
+        format.html { redirect_to @product, notice: t('.success') }
         format.json { render action: 'show', status: :created, location: @product }
       else
         format.html { render action: 'new' }
@@ -42,7 +42,7 @@ class ProductsController < ApplicationController
   def update
     respond_to do |format|
       if @product.update(product_params)
-        format.html { redirect_to @product, notice: 'Product was successfully updated.' }
+        format.html { redirect_to @product, notice: t('.success') }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -54,9 +54,10 @@ class ProductsController < ApplicationController
   # DELETE /products/1
   # DELETE /products/1.json
   def destroy
+    name = @product.name
     @product.destroy
     respond_to do |format|
-      format.html { redirect_to products_url }
+      format.html { redirect_to products_url, notice: t('.success', product: name) }
       format.json { head :no_content }
     end
   end

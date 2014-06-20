@@ -17,8 +17,8 @@
           = link_to t('.brand'), root_path, class: 'brand'
           .nav-collapse
             %ul.nav
-              %li
-              %li
+              %li= link_to root_path
+              %li= link_to t('new_product'), new_product_path
               %li
               %li
     .container
