@@ -7,8 +7,22 @@
     = csrf_meta_tags
     %meta{ name: "viewport", content: "width=device-width, initial-scale=1"}
   %body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.btn.btn-navbar{data: {toggle: 'collapse', target: '.nav-collapse'}}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          = link_to t('.brand'), root_path, class: 'brand'
+          .nav-collapse
+            %ul.nav
+              %li
+              %li
+              %li
+              %li
     .container
       .row
-        .span-3
-        .span-9
-          = yield
+        .span9
+          .main= yield
+        .span3 asdasd
