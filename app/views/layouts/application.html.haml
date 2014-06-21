@@ -18,11 +18,15 @@
           .nav-collapse
             %ul.nav
               %li= link_to root_path
-              %li= link_to t('new_product'), new_product_path
+              %li= link_to t('new_purchase'), new_purchase_path
               %li
               %li
     .container
       .row
         .span9
-          .main= yield
+          .main
+            -flash.each do |name, message|
+              .alert{class: name == :notice ? 'alert-success' : 'alert-error' }
+                =message
+            = yield
         .span3 asdasd
