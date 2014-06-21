@@ -3,13 +3,26 @@ ru:
     application:
       brand: Главная
       title: Бюджет
+      purchases: Покупки
   purchases:
     create:
       success: Покупка успешно добавлена
     destroy:
       success: "%{purchase} успешно удален из покупок"
+    edit:
+      title: Изменить %{purchase}
     index:
+      actions: Действия
+      date: Дата
+      destroy: Удалить
+      edit: Изменить
+      group: Группа
+      name: Наименование
+      new: Новая покупка
+      price: Цена
       title: Покупки
+    new:
+      title: Новая покупка
     show:
       title: "%{purchase}"
     update:
@@ -188,9 +201,16 @@ ru:
     select:
       prompt: ! 'Выберите: '
     submit:
-      create: Создать %{model}
+      create: Добавить
       submit: Сохранить %{model}
-      update: Сохранить %{model}
+      update: Сохранить
+    links:
+      back: Назад
+      cancel: Отмена
+      confirm: Вы уверены?
+      destroy: Удалить
+      edit: Изменить
+      new: Добавить
   number:
     currency:
       format:

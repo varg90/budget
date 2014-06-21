@@ -17,16 +17,10 @@
           = link_to t('.brand'), root_path, class: 'brand'
           .nav-collapse
             %ul.nav
-              %li= link_to root_path
-              %li= link_to t('new_purchase'), new_purchase_path
-              %li
-              %li
+              %li= link_to t('.purchases'), new_purchase_path
     .container
-      .row
-        .span9
-          .main
-            -flash.each do |name, message|
-              .alert{class: name == :notice ? 'alert-success' : 'alert-error' }
-                =message
-            = yield
-        .span3 asdasd
+      .main
+        -flash.each do |name, message|
+          .alert{class: name == :notice ? 'alert-success' : 'alert-error' }
+            =message
+        = yield
