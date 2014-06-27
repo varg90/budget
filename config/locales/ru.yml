@@ -10,7 +10,7 @@ ru:
     destroy:
       success: "%{purchase} успешно удален из покупок"
     edit:
-      title: Изменить %{purchase}
+      title: "Изменить %{purchase}"
     index:
       actions: Действия
       date: Дата
@@ -24,6 +24,10 @@ ru:
     new:
       title: Новая покупка
     show:
+      date: "Дата покупки :"
+      group: "Категория :"
+      name: "Наименование :"
+      price: "Цена :"
       title: "%{purchase}"
     update:
       success: Покупка успешно изменена

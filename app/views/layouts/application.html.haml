@@ -17,7 +17,7 @@
           = link_to t('.brand'), root_path, class: 'brand'
           .nav-collapse
             %ul.nav
-              %li= link_to t('.purchases'), new_purchase_path
+              %li= link_to t('.purchases'), purchases_path
     .container
       .main
         -flash.each do |name, message|
