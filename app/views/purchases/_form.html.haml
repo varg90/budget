@@ -1,6 +1,7 @@
 = simple_form_for @purchase, :html => { :class => 'form-horizontal' } do |f|
   = f.input :name
-  = f.input :group
+  = f.input :category_id, collection: Category.all {|c| [c.name, c]},
+    label_method: :name,:value_method => :id, include_blank: false
   = f.input :price
   = f.input :date
   .form-actions

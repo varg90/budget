@@ -4,6 +4,15 @@ ru:
       brand: Главная
       title: Бюджет
       purchases: Покупки
+      categories: Категории
+  categories:
+    index:
+      actions: Действия
+      name: Название категории
+      title: Категории покупок
+    show:
+      name: "Название категории :"
+      title: "%{category}"
   purchases:
     create:
       success: Покупка успешно добавлена
@@ -13,10 +22,8 @@ ru:
       title: "Изменить %{purchase}"
     index:
       actions: Действия
+      category: Категория
       date: Дата
-      destroy: Удалить
-      edit: Изменить
-      group: Группа
       name: Наименование
       new: Новая покупка
       price: Цена
@@ -25,7 +32,7 @@ ru:
       title: Новая покупка
     show:
       date: "Дата покупки :"
-      group: "Категория :"
+      category: "Категория :"
       name: "Наименование :"
       price: "Цена :"
       title: "%{purchase}"

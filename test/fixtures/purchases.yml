@@ -2,12 +2,12 @@
 
 one:
   name: MyString
-  group: MyString
+  category: MyString
   price: 9.99
   date: 2014-06-21
 
 two:
   name: MyString
-  group: MyString
+  category: MyString
   price: 9.99
   date: 2014-06-21

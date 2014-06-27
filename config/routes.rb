@@ -1,5 +1,7 @@
 Budget::Application.routes.draw do
 
+  resources :categories
+
   resources :purchases
   root to: 'purchases#index'
   # The priority is based upon order of creation: first created -> highest priority.

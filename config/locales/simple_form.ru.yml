@@ -14,12 +14,12 @@ ru:
        purchase:
          new:
            date: Дата покупки
-           group: Категория товара
+           category: Категория товара
            name: Наименование
            price: Цена
          edit:
            date: Дата покупки
-           group: Категория товара
+           category: Категория товара
            name: Наименование
            price: Цена
     hints:

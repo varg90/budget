@@ -1,3 +1,4 @@
 class Purchase < ActiveRecord::Base
-  validates :name, :group, :price, :date, presence: true
+  belongs_to :category
+  validates :name, :category_id, :price, :date, presence: true
 end

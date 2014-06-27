@@ -6,7 +6,7 @@
       %thead
         %tr
           %th= t '.name'
-          %th= t '.group'
+          %th= t '.category'
           %th= t '.price'
           %th= t '.date'
           %th=t '.actions', :default => t("helpers.actions")
@@ -14,11 +14,11 @@
         - @purchases.each do |purchase|
           %tr
             %td= link_to purchase.name, purchase_path(purchase)
-            %td= purchase.group
+            %td= purchase.category.name
             %td= number_to_currency purchase.price
             %td= purchase.date
             %td
-              = link_to t('.edit', :default => t("helpers.links.edit")), edit_purchase_path(purchase), :class => 'btn btn-mini'
-              = link_to t('.destroy', :default => t("helpers.links.destroy")), purchase_path(purchase), :method => :delete, :data => { :confirm => t("helpers.links.confirm") }, :class => 'btn btn-mini btn-danger'
+              = link_to t("helpers.links.edit"), edit_purchase_path(purchase), :class => 'btn btn-mini'
+              = link_to t("helpers.links.destroy"), purchase_path(purchase), :method => :delete, :data => { :confirm => t("helpers.links.confirm") }, :class => 'btn btn-mini btn-danger'
   .span2
     =render 'actions'
