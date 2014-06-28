@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(version: 20140627171147) do
 
   create_table "purchases", force: true do |t|
     t.string   "name"
-    t.string   "category"
     t.decimal  "price"
     t.date     "date"
     t.datetime "created_at"
