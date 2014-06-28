@@ -50,8 +50,10 @@ test:
   pool: 5
 
 production:
-  host: localhost
+  host: ENV['db_host']
   adapter: postgresql
   encoding: unicode
-  database: budget_production
+  database: ENV['db_name']
+  username: ENV['db_username']
+  password: ENV['db_password']
   pool: 5
