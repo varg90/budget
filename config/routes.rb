@@ -4,6 +4,8 @@ Budget::Application.routes.draw do
 
   resources :purchases
   root to: 'purchases#index'
+  get '/calendar', to: 'purchases#calendar', as: 'calendar'
+  get '/by_date/:date', to: 'purchases#by_date', as: 'purchases_by_date'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

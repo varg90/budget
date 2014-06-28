@@ -39,6 +39,7 @@ ru:
     update:
       success: Покупка успешно изменена
   time:
+    am: утра
     formats:
       default: "%a, %d %b %Y, %H:%M:%S %z"
       time: "%H:%M"
@@ -47,6 +48,7 @@ ru:
       date: "%d.%m.%Y"
       md: "%m-%d"
       descr: "%d %b %Y"
+    pm: вечера
   date:
     abbr_day_names:
     - Вс
@@ -79,23 +81,24 @@ ru:
     - пятница
     - суббота
     formats:
+      calendar_month: "%B %Y"
       default: ! '%d.%m.%Y'
       long: ! '%-d %B %Y'
       short: ! '%-d %b'
     month_names:
     -
-    - января
-    - февраля
-    - марта
-    - апреля
-    - мая
-    - июня
-    - июля
-    - августа
-    - сентября
-    - октября
-    - ноября
-    - декабря
+    - Январь
+    - Февраль
+    - Март
+    - Апрель
+    - Май
+    - Июнь
+    - Июль
+    - Август
+    - Сентябрь
+    - Октябрь
+    - Ноябрь
+    - Декабрь
     order:
     - :day
     - :month
@@ -296,13 +299,6 @@ ru:
       last_word_connector: ! ' и '
       two_words_connector: ! ' и '
       words_connector: ! ', '
-  time:
-    am: утра
-    formats:
-      default: ! '%a, %d %b %Y, %H:%M:%S %z'
-      long: ! '%d %B %Y, %H:%M'
-      short: ! '%d %b, %H:%M'
-    pm: вечера
   views:
     pagination:
       first: Первая
